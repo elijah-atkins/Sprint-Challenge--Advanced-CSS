@@ -4,6 +4,13 @@
     justify-content: @just;
     flex-flow: @flow;
 }
+//duration, delay, ease
+.set-ani (@duration, @delay, @ease) {
+    animation-duration: @duration;
+    animation-delay: @delay;
+    animation-timing-function: @ease;
+    animation-fill-mode: both;
+}
 //bg color, font color, height
 .button(@bg-color, @color, @height){
 
