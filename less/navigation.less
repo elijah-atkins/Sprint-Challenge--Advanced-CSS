@@ -1,1 +1,30 @@
-// Navigation code here
+// Navigation code here nav nav-links logo
+nav {
+    height: 10rem;
+    padding: 1rem;
+    background-color: @nav-bg;
+    color: @nav-font;
+    .flex(center, row);
+    border-bottom: 2px solid @nav-border;
+
+    .nav-links {
+        max-width: 800px;
+        .flex(space-between,column);
+        .logo {
+            font-size: 3.5rem;
+        }
+    }
+    ul {
+        .flex(center,row);
+        list-style: none;
+        margin-bottom: 1rem;
+        li {
+            font-size: 2rem;
+            margin-top: 1rem;
+            color: @link-color;
+            &:hover {
+                color: lighten(@link-color, 50%);
+            }
+        }
+    }
+}
