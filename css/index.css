@@ -215,6 +215,7 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
+  border-radius: 1rem;
   width: 100%;
 }
 .home .space-images img {
@@ -247,6 +248,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  height: 4rem;
+  width: 33%;
+  padding: 1rem;
+  color: #F6F7F8;
+  background-color: #22283A;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+}
+.home .walk .walk-text .btn:hover {
+  color: #ffffff;
+  background-color: #515f8a;
 }
 .home .walk .walk-img {
   width: 46%;

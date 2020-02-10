@@ -4,3 +4,19 @@
     justify-content: @just;
     flex-flow: @flow;
 }
+//bg color, font color, height
+.button(@bg-color, @color, @height){
+
+    height: @height;
+    width: 33%;
+    padding: 1rem;
+    color: @color;
+    background-color: @bg-color;
+    font-size: 1.8rem;
+    border-radius: .8rem;
+    .flex(center, row);
+    &:hover{
+        color: lighten(@color, 25%);
+        background-color: lighten(@bg-color, 25%);
+    }
+}
